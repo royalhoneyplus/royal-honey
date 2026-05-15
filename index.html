@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Honey Plus — Miel Real Premium | UniSmart</title>
+<meta name="description" content="Royal Honey Plus · Miel natural premium para él. Energía, vitalidad y rendimiento. Envío rápido a toda España.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gold:       #c8a44a;
+  --gold-light: #e8c96a;
+  --gold-dim:   #7a5c20;
+  --red:        #8B0000;
+  --red-bright: #c0392b;
+  --bg:         #080100;
+  --bg2:        #100200;
+  --bg3:        #1a0300;
+  --text:       #f0e8d8;
+  --text-muted: #6a4010;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'EB Garamond', Georgia, serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* HEX PATTERN BACKGROUND */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='57'%3E%3Cpath d='M25 0L50 14.3L50 42.8L25 57L0 42.8L0 14.3Z' fill='none' stroke='%23c8a44a' stroke-width='0.4' opacity='0.07'/%3E%3C/svg%3E");
+  background-size: 36px 41px;
+  pointer-events: none;
+}
+
+.page {
+  position: relative; z-index: 1;
+  max-width: 480px; margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+/* ── TOP BANNER ── */
+.top-banner {
+  background: linear-gradient(90deg, var(--red), #6a0000, var(--red));
+  padding: 9px 20px;
+  text-align: center;
+  border-bottom: 1px solid #c8a44a22;
+}
+.top-banner p {
+  font-family: 'Cinzel', serif;
+  font-size: 10px; letter-spacing: 3px;
+  color: var(--gold-light); text-transform: uppercase;
+}
+
+/* ── HERO ── */
+.hero {
+  padding: 32px 24px 20px;
+  text-align: center;
+  position: relative;
+}
+.hero::before, .hero::after {
+  content: '';
+  position: absolute;
+  width: 55px; height: 55px;
+  border-color: var(--gold);
+  border-style: solid;
+  opacity: 0.25;
+}
+.hero::before { top: 0; left: 0; border-width: 1.5px 0 0 1.5px; border-radius: 14px 0 0 0; }
+.hero::after  { top: 0; right: 0; border-width: 1.5px 1.5px 0 0; border-radius: 0 14px 0 0; }
+
+.brand-label {
+  font-family: 'Cinzel', serif;
+  font-size: 9px; letter-spacing: 6px;
+  color: var(--gold); text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.hero-title {
+  font-family: 'Cinzel', serif;
+  font-size: 28px; font-weight: 900;
+  color: var(--gold-light);
+  letter-spacing: 2px; line-height: 1.1;
+  margin-bottom: 4px;
+}
+.hero-arabic {
+  font-size: 18px; color: var(--red-bright);
+  font-weight: 600; margin-bottom: 10px;
+}
+.vip-pill {
+  display: inline-block;
+  background: var(--red);
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  font-family: 'Cinzel', serif;
+  font-size: 9px; letter-spacing: 2px;
+  padding: 4px 18px; border-radius: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* ── PRODUCT IMAGES ── */
+.product-images {
+  display: flex; gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 0 12px;
+}
+.product-frame {
+  position: relative;
+  flex: 1; max-width: 190px;
+}
+.product-frame::before {
+  content: '';
+  position: absolute; inset: -5px;
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  opacity: 0.3;
+}
+.product-frame img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  box-shadow: 0 8px 30px #8B000033, 0 2px 10px #c8a44a18;
+}
+
+/* ── ORNAMENT ── */
+.ornament {
+  display: flex; align-items: center;
+  justify-content: center; gap: 8px;
+  margin: 4px 0 20px;
+}
+.orn-line { flex: 1; max-width: 70px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+.orn-diamond { width: 6px; height: 6px; background: var(--gold); transform: rotate(45deg); }
+.orn-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--red-bright); }
+
+/* ── SECTION TITLE ── */
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 13px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase;
+  color: var(--gold); text-align: center;
+  margin-bottom: 18px;
+}
+
+/* ── BENEFITS ── */
+.benefits {
+  padding: 6px 20px 24px;
+}
+.benefit-item {
+  display: flex; align-items: flex-start;
+  gap: 14px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  background: var(--bg2);
+  border: 1px solid #c8a44a14;
+  border-radius: 12px;
+  transition: border-color 0.2s;
+}
+.benefit-item:hover { border-color: #c8a44a44; }
+.benefit-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+.benefit-text h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 12px; font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--gold-light);
+  margin-bottom: 3px;
+}
+.benefit-text p {
+  font-size: 13px; line-height: 1.5;
+  color: #a07848;
+}
+
+/* ── INGREDIENTS ── */
+.ingredients {
+  padding: 0 24px 20px;
+  text-align: center;
+  background: var(--bg2);
+  margin: 0 16px 24px;
+  border: 1px solid #c8a44a14;
+  border-radius: 14px;
+  padding: 16px 20px;
+}
+.ingredients p { font-size: 13px; color: #7a5030; line-height: 2.2; }
+.ingredients strong { color: var(--gold); font-weight: 600; }
+.ingredients em { font-size: 11px; color: #4a2808; display: block; margin-top: 6px; }
+
+/* ── PRICING ── */
+.prices {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 14px; padding: 0 16px 24px;
+}
+.price-card {
+  border-radius: 16px; padding: 20px 12px;
+  text-align: center; position: relative;
+  overflow: hidden;
+  background: var(--bg2);
+  border: 1px solid #6a000033;
+  transition: transform 0.2s;
+}
+.price-card:hover { transform: translateY(-3px); }
+.price-card.best {
+  border: 1.5px solid var(--gold);
+  background: var(--bg3);
+}
+.price-card.best::after {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--red), var(--gold), var(--red));
+}
+.best-badge {
+  position: absolute; top: -11px; left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, var(--red), #a00000);
+  border: 1px solid var(--gold);
+  color: var(--gold-light);
+  font-family: 'Cinzel', serif;
+  font-size: 8px; letter-spacing: 1px;
+  padding: 3px 12px; border-radius: 20px;
+  white-space: nowrap;
+}
+.qty-label {
+  font-family: 'Cinzel', serif;
+  font-size: 10px; letter-spacing: 1.5px;
+  color: var(--text-muted); text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.qty-num {
+  font-family: 'Cinzel', serif;
+  font-size: 34px; font-weight: 900;
+  color: var(--gold-light); line-height: 1;
+}
+.qty-sub { font-size: 11px; color: #5a3010; margin-bottom: 10px; }
+.price-amount {
+  font-family: 'Cinzel', serif;
+  font-size: 38px; font-weight: 900; color: #fff;
+}
+.price-eur { font-size: 18px; color: var(--gold); }
+.per-unit { font-size: 10px; color: #5a3010; margin-top: 4px; }
+.per-unit strong { color: var(--gold); }
+.saving {
+  display: inline-block;
+  background: #8B000018; border: 1px solid #8B000055;
+  color: var(--red-bright);
+  font-size: 9px; padding: 2px 10px; border-radius: 10px;
+  margin-top: 6px;
+}
+
+/* ── CTA BUTTON ── */
+.cta-section { padding: 0 16px 24px; }
+.btn-wa {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; padding: 17px;
+  background: linear-gradient(135deg, #1ebe57, #25D366);
+  color: #fff;
+  border: none; border-radius: 14px;
+  font-family: 'Cinzel', serif;
+  font-size: 15px; font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer; text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+  box-shadow: 0 4px 24px #25D36640;
+}
+.btn-wa:hover { opacity: 0.88; transform: translateY(-2px); }
+.btn-wa svg { width: 22px; height: 22px; flex-shrink: 0; }
+.btn-sub {
+  text-align: center;
+  font-size: 11px; color: #4a2808;
+  margin-top: 8px; letter-spacing: 0.5px;
+}
+
+/* ── FAQ ── */
+.faq { padding: 0 16px 24px; }
+.faq-item {
+  margin-bottom: 8px;
+  border: 1px solid #c8a44a14;
+  border-radius: 12px;
+  background: var(--bg2);
+  overflow: hidden;
+}
+.faq-question {
+  width: 100%; background: none; border: none;
+  padding: 14px 16px;
+  display: flex; justify-content: space-between; align-items: center;
+  cursor: pointer;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 14px; font-weight: 600;
+  color: var(--text); text-align: left;
+  gap: 10px;
+}
+.faq-question:hover { color: var(--gold-light); }
+.faq-arrow {
+  color: var(--gold); font-size: 18px;
+  flex-shrink: 0; transition: transform 0.3s;
+}
+.faq-item.open .faq-arrow { transform: rotate(180deg); }
+.faq-answer {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.25s;
+  padding: 0 16px;
+  font-size: 13px; color: #7a5030; line-height: 1.7;
+}
+.faq-item.open .faq-answer {
+  max-height: 200px;
+  padding: 0 16px 14px;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  border: none; border-top: 1px solid #c8a44a0e;
+  margin: 0 16px 20px; position: relative;
+}
+.divider::before {
+  content: '✦';
+  position: absolute; left: 50%; top: -9px;
+  transform: translateX(-50%);
+  background: var(--bg); padding: 0 8px;
+  font-size: 10px; color: #c8a44a33;
+}
+
+/* ── FOOTER ── */
+.footer {
+  background: #040000;
+  border-top: 1px solid #c8a44a0e;
+  padding: 16px 20px;
+  display: flex; justify-content: center; gap: 24px;
+  flex-wrap: wrap;
+}
+.footer-item {
+  font-family: 'Cinzel', serif;
+  font-size: 9px; color: var(--text-muted);
+  display: flex; align-items: center; gap: 5px;
+  letter-spacing: 0.5px; text-transform: uppercase;
+}
+.footer-item .icon { color: var(--gold); font-size: 12px; }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero     { animation: fadeUp 0.6s ease both; }
+.benefits { animation: fadeUp 0.6s ease 0.1s both; }
+.prices   { animation: fadeUp 0.6s ease 0.2s both; }
+.cta-section { animation: fadeUp 0.6s ease 0.3s both; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- TOP BANNER -->
+  <div class="top-banner">
+    <p>✦ Royal Honey Plus &nbsp;·&nbsp; Envío a toda España ✦</p>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="brand-label">UniSmart</p>
+    <h1 class="hero-title">Royal Honey Plus</h1>
+    <p class="hero-arabic">العسل الملكي</p>
+    <div class="vip-pill">VIP &nbsp;·&nbsp; For Him</div>
+
+    <div class="product-images">
+      <div class="product-frame">
+        <img src="images/product-1.jpg" alt="Royal Honey Plus - caja frontal">
+      </div>
+      <div class="product-frame">
+        <img src="images/product-2.jpg" alt="Royal Honey Plus - sachet">
+      </div>
+    </div>
+
+    <div class="ornament">
+      <div class="orn-line"></div>
+      <div class="orn-dot"></div>
+      <div class="orn-diamond"></div>
+      <div class="orn-dot"></div>
+      <div class="orn-line"></div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <p class="section-title">Beneficios</p>
+
+    <div class="benefit-item">
+      <div class="benefit-icon">⚡</div>
+      <div class="benefit-text">
+        <h3>Energía & Vitalidad</h3>
+        <p>Combate el cansancio y aumenta tu energía física y mental durante todo el día.</p>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-icon">🔥</div>
+      <div class="benefit-text">
+        <h3>Deseo & Libido</h3>
+        <p>Estimula naturalmente el deseo sexual y recupera la pasión de forma segura.</p>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-icon">💪</div>
+      <div class="benefit-text">
+        <h3>Resistencia & Potencia</h3>
+        <p>Mejora el rendimiento y la resistencia para que dures más y rindas mejor.</p>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-icon">🌿</div>
+      <div class="benefit-text">
+        <h3>100% Natural</h3>
+        <p>Sin químicos, sin conservantes. Fórmula pura con ingredientes de origen natural.</p>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-icon">🍯</div>
+      <div class="benefit-text">
+        <h3>Rico en Nutrientes</h3>
+        <p>Vitaminas, minerales y antioxidantes naturales que nutren tu organismo desde dentro.</p>
+      </div>
+    </div>
+
+    <div class="benefit-item">
+      <div class="benefit-icon">⏱️</div>
+      <div class="benefit-text">
+        <h3>Efecto Rápido</h3>
+        <p>Resultados notables desde la primera toma. Acción en 30–45 minutos.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- INGREDIENTS -->
+  <div class="ingredients">
+    <p>
+      <strong>60%</strong> miel natural &nbsp;·&nbsp; <strong>33%</strong> melaza de caña<br>
+      <strong>2%</strong> jengibre &nbsp;·&nbsp; <strong>2%</strong> pólen &nbsp;·&nbsp; <strong>1%</strong> nuez moscada
+    </p>
+    <em>Fórmula con aditivos vitales · Sin conservantes</em>
+  </div>
+
+  <hr class="divider">
+
+  <!-- PRICING -->
+  <section>
+    <p class="section-title">Elige tu Pack</p>
+    <div class="prices">
+      <div class="price-card">
+        <p class="qty-label">Pack</p>
+        <p class="qty-num">1</p>
+        <p class="qty-sub">caja · 12 sachets</p>
+        <div><span class="price-amount">35</span><span class="price-eur">€</span></div>
+        <p class="per-unit"><strong>2.92€</strong> / sachet</p>
+      </div>
+      <div class="price-card best">
+        <div class="best-badge">✦ Mejor precio</div>
+        <p class="qty-label">Pack</p>
+        <p class="qty-num">2</p>
+        <p class="qty-sub">cajas · 24 sachets</p>
+        <div><span class="price-amount">65</span><span class="price-eur">€</span></div>
+        <p class="per-unit"><strong>2.71€</strong> / sachet</p>
+        <div class="saving">Ahorras 5€</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <a class="btn-wa" href="https://wa.me/+34XXXXXXXXX?text=Hola%2C%20quiero%20pedir%20Royal%20Honey%20Plus%20🍯" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Pedir por WhatsApp
+    </a>
+    <p class="btn-sub">Respuesta en menos de 1 hora &nbsp;·&nbsp; Pago al recibir</p>
+  </div>
+
+  <hr class="divider">
+
+  <!-- FAQ -->
+  <section class="faq">
+    <p class="section-title">Preguntas Frecuentes</p>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        ¿Cuándo se notan los efectos?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-answer">
+        Los efectos se notan en los primeros 30–45 minutos tras la toma. Para resultados óptimos y duraderos, se recomienda un uso regular.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        ¿Cuántos sachets se toman al día?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-answer">
+        Se recomienda 1 sachet al día, preferentemente en ayunas o 30 minutos antes de la actividad. No superar la dosis recomendada.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        ¿Es seguro? ¿Tiene efectos secundarios?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-answer">
+        Royal Honey Plus es 100% natural y no contiene conservantes ni químicos. No se conocen efectos secundarios con un uso normal.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        ¿Cómo se toma exactamente?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-answer">
+        Directamente del sachet o disuelto en un vaso de agua tibia. Evitar mezclar con bebidas frías o alcohólicas.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        ¿Hacéis envío a toda España?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-answer">
+        Sí, realizamos envíos a toda España en 24–48 horas. El pedido llega en embalaje discreto, sin indicación del contenido.
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-item"><span class="icon">✦</span> 100% Natural</div>
+    <div class="footer-item"><span class="icon">✦</span> Envío discreto</div>
+    <div class="footer-item"><span class="icon">✦</span> VIP Quality</div>
+    <div class="footer-item"><span class="icon">✦</span> Pago seguro</div>
+  </footer>
+
+</div>
+
+<script>
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+</script>
+</body>
+</html>

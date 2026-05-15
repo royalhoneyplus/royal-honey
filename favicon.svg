@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" shape-rendering="geometricPrecision">
+  <defs>
+    <!-- Dark luxury background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#1e0800"/>
+      <stop offset="100%" stop-color="#060100"/>
+    </linearGradient>
+
+    <!-- Crown metallic gold: top bright → bottom dark -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="20%" y2="100%">
+      <stop offset="0%"   stop-color="#fffbe0"/>
+      <stop offset="18%"  stop-color="#f5d050"/>
+      <stop offset="55%"  stop-color="#c88c18"/>
+      <stop offset="100%" stop-color="#6a3c00"/>
+    </linearGradient>
+
+    <!-- Left-to-right 3D shading overlay -->
+    <linearGradient id="shade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#fff8c0" stop-opacity="0.45"/>
+      <stop offset="35%"  stop-color="#fff8c0" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000"     stop-opacity="0.35"/>
+    </linearGradient>
+
+    <!-- Jewel glow -->
+    <radialGradient id="jewel" cx="40%" cy="30%" r="65%">
+      <stop offset="0%"   stop-color="#ffffff"/>
+      <stop offset="50%"  stop-color="#fff0a0"/>
+      <stop offset="100%" stop-color="#d4a020"/>
+    </radialGradient>
+
+    <!-- Outer ring glow -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Crown drop shadow -->
+    <filter id="shadow" x="-15%" y="-15%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#c89020" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+
+  <!-- Subtle border -->
+  <rect width="32" height="32" rx="7" fill="none"
+        stroke="#c8a44a" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Subtle hex watermark center -->
+  <path d="M16 11 L21 14 L21 20 L16 23 L11 20 L11 14 Z"
+        fill="none" stroke="#c8a44a" stroke-width="0.4" opacity="0.12"/>
+
+  <!-- CROWN: main gold shape -->
+  <path d="M5.5 24.5 L5.5 17.5 L10 21.5 L16 8.5 L22 21.5 L26.5 17.5 L26.5 24.5 Z"
+        fill="url(#gold)" filter="url(#shadow)"/>
+
+  <!-- CROWN: 3D shading overlay -->
+  <path d="M5.5 24.5 L5.5 17.5 L10 21.5 L16 8.5 L22 21.5 L26.5 17.5 L26.5 24.5 Z"
+        fill="url(#shade)"/>
+
+  <!-- BASE BAND: gold -->
+  <rect x="4.5" y="23.5" width="23" height="3.8" rx="1.5"
+        fill="url(#gold)"/>
+  <!-- BASE BAND: shading -->
+  <rect x="4.5" y="23.5" width="23" height="3.8" rx="1.5"
+        fill="url(#shade)"/>
+  <!-- BASE BAND: bottom shadow line -->
+  <rect x="4.5" y="26.3" width="23" height="1" rx="0.5"
+        fill="#000" opacity="0.3"/>
+
+  <!-- TIP JEWELS -->
+  <circle cx="5.5"  cy="17.5" r="2"  fill="url(#jewel)" filter="url(#glow)"/>
+  <circle cx="16"   cy="8.5"  r="2"  fill="url(#jewel)" filter="url(#glow)"/>
+  <circle cx="26.5" cy="17.5" r="2"  fill="url(#jewel)" filter="url(#glow)"/>
+
+  <!-- CENTER DIAMOND GEM on base -->
+  <rect x="14.7" y="24" width="2.6" height="2.6"
+        transform="rotate(45 16 25.3)"
+        fill="url(#jewel)" opacity="0.95"/>
+</svg>
